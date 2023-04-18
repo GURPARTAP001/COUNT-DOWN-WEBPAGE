@@ -1,0 +1,60 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&family=Poppins:wght@400;500;600&family=Potta+One&family=Roboto+Slab:wght@300&display=swap');
+/* 
+font-family: 'Alkatra', cursive;
+font-family: 'Poppins', sans-serif;
+font-family: 'Potta One', cursive;
+font-family: 'Roboto Slab', serif;
+ */
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-image:url("1.jpg");
+    background-size: cover;
+    background-position: center;
+    font-family:'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+h1{
+    font-weight: normal;
+    font-size: 4rem;
+    margin-top: 5rem;
+    text-align: center;
+    color:saddlebrown;
+    font-weight: bold;
+}
+
+.countdown-el{
+    text-align: center;
+    background-color: azure;
+    margin-inline: 1px;
+    background: rgba(179, 215, 243, 0.7);
+    border-radius: 30px;
+    margin-bottom: 10px;
+}
+.countdown-el span{
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.countdown-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.big-text{
+    font-weight: bold;
+    font-size: 6rem;
+    line-height: 1;
+    margin: 1rem 2rem;
+}
+
