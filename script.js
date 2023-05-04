@@ -1,5 +1,5 @@
 // we need the end date and the starting date and we will subtract them to get the time left
-const exam="28 Apr 2023 9:0:0";
+const exam="15 May 2023 9:30:0";
 
 const daysEl=document.getElementById("days")
 const hoursEl=document.getElementById("hours")
@@ -14,6 +14,9 @@ function countdown(){
     const hours=Math.floor(totalSeconds/3600)%24;
     const minutes=Math.floor(totalSeconds/60)%60;
     const seconds=Math.floor(totalSeconds)%60
+    if(totalSeconds<0){
+        totalSeconds=0;
+    }
 
 
     daysEl.innerText=addZero_in_front(days);
