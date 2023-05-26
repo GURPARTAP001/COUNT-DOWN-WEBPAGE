@@ -1,5 +1,5 @@
 // we need the end date and the starting date and we will subtract them to get the time left
-const exam="15 May 2023 9:30:0";
+const exam="5 June 2023 9:30:0";
 
 const daysEl=document.getElementById("days")
 const hoursEl=document.getElementById("hours")
