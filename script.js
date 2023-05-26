@@ -1,14 +1,14 @@
 // we need the end date and the starting date and we will subtract them to get the time left
-const exam="5 June 2023 9:30:0";
+const exam="5 June 2023";
 
 const daysEl=document.getElementById("days")
 const hoursEl=document.getElementById("hours")
 const minsEl=document.getElementById("mins")
 const secondsEl=document.getElementById("seconds")
 function countdown(){
-    const newexamDate=new Date(exam);
-    const currentDate = new Date();
-
+    const newexamDate=new Date(exam); //it give us the date that we have entered
+    const currentDate = new Date();//it give us the current date 
+   
     const totalSeconds=(newexamDate-currentDate)/1000;
     const days=Math.floor(totalSeconds/3600/24);
     const hours=Math.floor(totalSeconds/3600)%24;
@@ -32,4 +32,5 @@ function addZero_in_front(time){
 countdown();
 
 
+// as we need the counter to work countinously thus using the setinterval
 setInterval(countdown,1000)
